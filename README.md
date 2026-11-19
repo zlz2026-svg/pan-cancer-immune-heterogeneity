@@ -11,7 +11,7 @@ Immune microenvironment signatures (CD8 T cells, tertiary lymphoid structures, c
 - Between-cancer heterogeneity was marked (I² = 51–86%), including direction reversals (the CD8 T-cell signature is a risk factor in glioblastoma but protective in ovarian cancer).
 - Proliferation was the dominant moderator, explaining 27.6–37.5% of the between-cancer variance for CD8, CAF and IFN-γ signatures (permutation p < 0.05), consistent with stoichiometric dilution of immune signal by proliferating malignant cells.
 - The tumor-associated neutrophil signature was driven by non-tumoral (stromal/immune) content rather than germ-layer origin.
-- Tumour purity and tumor mutational burden contributed little, and the cDC2 signature had no significant moderator.
+- The stromal/immune score and tumor mutational burden contributed little, and the cDC2 signature had no significant moderator.
 
 ## Repository contents
 
