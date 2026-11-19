@@ -1,0 +1,35 @@
+=== CD8_cyto (B2, k=31) ===
+  prolif_abs     R2= 37.5%  beta=-0.0869 (-0.1566, -0.0172)  p=0.016  FDR=0.114
+  estimate_abs   R2=  3.0%  beta=-0.0404 (-0.0954, 0.0146)  p=0.144  FDR=0.310
+  germ           R2=  1.0%  endoderm=-0.0633 mesoderm=-0.0211 ectoderm=0.1327  p=0.377  FDR=0.480
+  median_TMB     R2=  4.2%  beta=-0.0311 (-0.0719, 0.0098)  p=0.131  FDR=0.305
+=== TLS (B2, k=31) ===
+  prolif_abs     R2= 21.4%  beta=-0.0647 (-0.1288, -0.0005)  p=0.048  FDR=0.169
+  estimate_abs   R2=  0.0%  beta=-0.0263 (-0.0751, 0.0225)  p=0.280  FDR=0.417
+  germ           R2=  0.0%  endoderm=-0.0983 mesoderm=0.0078 ectoderm=0.0282  p=0.957  FDR=0.992
+  median_TMB     R2=  0.0%  beta=-0.0086 (-0.0444, 0.0272)  p=0.626  FDR=0.730
+=== CAF (B2, k=31) ===
+  prolif_abs     R2= 27.6%  beta=-0.0717 (-0.1315, -0.0119)  p=0.020  FDR=0.114
+  estimate_abs   R2=  0.0%  beta=-0.0279 (-0.0749, 0.0191)  p=0.234  FDR=0.410
+  germ           R2=  0.0%  endoderm=0.1263 mesoderm=0.0459 ectoderm=0.1179  p=0.435  FDR=0.530
+  median_TMB     R2=  0.0%  beta=-0.0023 (-0.0388, 0.0342)  p=0.900  FDR=0.992
+=== TAN (B2, k=31) ===
+  prolif_abs     R2=  5.6%  beta=-0.0346 (-0.0997, 0.0306)  p=0.287  FDR=0.417
+  estimate_abs   R2= 36.5%  beta=-0.0547 (-0.0970, -0.0124)  p=0.013  FDR=0.114
+  germ           R2= 30.3%  endoderm=0.0753 mesoderm=-0.0945 ectoderm=0.1359  p=0.040  FDR=0.159
+  median_TMB     R2=  0.0%  beta=-0.0002 (-0.0370, 0.0367)  p=0.992  FDR=0.992
+=== cDC2 (B2, k=31) ===
+  prolif_abs     R2=  0.0%  beta=-0.0361 (-0.1015, 0.0293)  p=0.269  FDR=0.417
+  estimate_abs   R2= 15.1%  beta=-0.0368 (-0.0837, 0.0102)  p=0.120  FDR=0.305
+  germ           R2= 11.5%  endoderm=-0.0630 mesoderm=-0.1388 ectoderm=0.0355  p=0.129  FDR=0.305
+  median_TMB     R2=  0.0%  beta=0.0017 (-0.0337, 0.0371)  p=0.923  FDR=0.992
+=== IFNg_path (B2, k=31) ===
+  prolif_abs     R2= 35.6%  beta=-0.1035 (-0.1797, -0.0273)  p=0.010  FDR=0.114
+  estimate_abs   R2=  6.5%  beta=-0.0516 (-0.1112, 0.0079)  p=0.087  FDR=0.270
+  germ           R2=  8.1%  endoderm=0.0057 mesoderm=-0.0618 ectoderm=0.1402  p=0.298  FDR=0.417
+  median_TMB     R2=  0.8%  beta=-0.0267 (-0.0717, 0.0183)  p=0.234  FDR=0.410
+=== Prolifer (B2, k=31) ===
+  prolif_abs     R2= 73.7%  beta=-0.2058 (-0.2836, -0.1280)  p=0.000  FDR=0.000
+  estimate_abs   R2=  1.7%  beta=-0.0924 (-0.1771, -0.0076)  p=0.034  FDR=0.157
+  germ           R2=  0.0%  endoderm=0.1150 mesoderm=0.2235 ectoderm=0.1909  p=0.322  FDR=0.429
+  median_TMB     R2=  3.5%  beta=-0.0379 (-0.1011, 0.0253)  p=0.230  FDR=0.410

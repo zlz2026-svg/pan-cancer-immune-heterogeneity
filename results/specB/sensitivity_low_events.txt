@@ -1,0 +1,17 @@
+===== k=31（主分析，B2）=====
+CD8_cyto: k=31 pooled HR=0.963 p=0.349 | prolif R2=37.5% p=0.016
+TLS: k=31 pooled HR=0.914 p=0.013 | prolif R2=21.4% p=0.048
+CAF: k=31 pooled HR=1.183 p=0.000 | prolif R2=27.6% p=0.020
+TAN: k=31 pooled HR=1.084 p=0.014 | prolif R2=5.6% p=0.287
+cDC2: k=31 pooled HR=0.909 p=0.005 | prolif R2=0.0% p=0.269
+IFNg_path: k=31 pooled HR=1.022 p=0.639 | prolif R2=35.6% p=0.010
+Prolifer: k=31 pooled HR=1.256 p=0.000 | prolif R2=73.7% p=0.000
+
+===== k=26（剔除 PCPG/DLBC/THYM/PRAD/KICH，B2）=====
+CD8_cyto: k=26 pooled HR=0.961 p=0.346 | prolif R2=38.8% p=0.011
+TLS: k=26 pooled HR=0.915 p=0.016 | prolif R2=22.2% p=0.031
+CAF: k=26 pooled HR=1.192 p=0.000 | prolif R2=27.2% p=0.025
+TAN: k=26 pooled HR=1.080 p=0.021 | prolif R2=5.7% p=0.206
+cDC2: k=26 pooled HR=0.911 p=0.008 | prolif R2=0.0% p=0.412
+IFNg_path: k=26 pooled HR=1.008 p=0.863 | prolif R2=35.9% p=0.011
+Prolifer: k=26 pooled HR=1.242 p=0.000 | prolif R2=67.3% p=0.000

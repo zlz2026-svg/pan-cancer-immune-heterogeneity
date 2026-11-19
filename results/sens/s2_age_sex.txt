@@ -1,0 +1,9 @@
+===== S2 统一协变量（age+sex）vs 主分析（age+sex+stage）=====
+
+CD8_cyto   pooled: age+sex HR=0.975(p=0.544) vs main HR=0.963(p=0.349) | prolif R2: age+sex 41.1% vs main 37.5%
+TLS        pooled: age+sex HR=0.933(p=0.096) vs main HR=0.914(p=0.013) | prolif R2: age+sex 21.5% vs main 21.4%
+CAF        pooled: age+sex HR=1.218(p=0.000) vs main HR=1.183(p=0.000) | prolif R2: age+sex 38.2% vs main 27.6%
+TAN        pooled: age+sex HR=1.087(p=0.010) vs main HR=1.084(p=0.014) | prolif R2: age+sex 5.6% vs main 5.6%
+cDC2       pooled: age+sex HR=0.899(p=0.003) vs main HR=0.909(p=0.005) | prolif R2: age+sex 0.0% vs main 0.0%
+IFNg_path  pooled: age+sex HR=1.032(p=0.518) vs main HR=1.022(p=0.639) | prolif R2: age+sex 44.8% vs main 35.6%
+Prolifer   pooled: age+sex HR=1.265(p=0.001) vs main HR=1.256(p=0.000) | prolif R2: age+sex 80.3% vs main 73.7%

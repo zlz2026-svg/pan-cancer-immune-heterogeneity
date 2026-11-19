@@ -1,0 +1,33 @@
+# 项目数据与工作目录
+.workbuddy/
+
+# 原始数据（TCGA 受控访问，需 GDC/dbGaP 授权）
+00-原始数据/
+data/
+
+# 中间产物与工作记录
+01-中间产物/
+03-工作记录/
+
+# 交付稿件（投稿接收前不公开）
+02-最终交付/
+
+# 文献 PDF 与笔记（版权 / 内部）
+references/
+文献笔记/
+
+# 图表（暂不公开）
+figures/
+
+# 内部待办清单
+【1119】次日待办V1.md
+【1120】次日待办V1.md
+
+# 旧版本备份与中间预览
+results/specB_stagebug/
+results/meta_regression_v2.txt
+results/meta_regression_v3.txt
+results/meta_regression_v4.txt
+results/geo_validation_summary.txt
+results/glass_expr_clin.csv
+results/specB/B2_attribution_preview.txt

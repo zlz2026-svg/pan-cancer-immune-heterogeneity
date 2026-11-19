@@ -1,0 +1,4 @@
+E2F_TARGETS n=200, G2M_CHECKPOINT n=200
+merged unique n=327
+overlap with Prolifer8 removed: ['AURKA', 'BIRC5', 'CDK1', 'MCM2', 'MKI67', 'PCNA', 'TOP2A']
+prolif_alt final genes n=320, mapped ENSG n=321

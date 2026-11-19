@@ -1,0 +1,7 @@
+CD8_cyto: full HR=0.963, loo range=0.941-0.975
+TLS: full HR=0.914, loo range=0.903-0.927
+CAF: full HR=1.183, loo range=1.157-1.196
+TAN: full HR=1.084, loo range=1.052-1.096
+cDC2: full HR=0.909, loo range=0.897-0.922
+IFNg_path: full HR=1.022, loo range=0.990-1.040
+Prolifer: full HR=1.256, loo range=1.223-1.274

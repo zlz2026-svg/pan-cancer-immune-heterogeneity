@@ -1,0 +1,42 @@
+=== CD8_cyto (k=31) ===
+  pooled HR=0.969 (0.854-1.099), I2=73.4%, tau2=0.0753
+  germ meta-reg: R2=6.6%, QM p=0.2027
+  prolif meta-reg: R2=43.5%, QM p=0.0028
+  full model R2: 42.8%
+
+=== TLS (k=31) ===
+  pooled HR=0.900 (0.789-1.026), I2=72.1%, tau2=0.0814
+  germ meta-reg: R2=0.0%, QM p=0.7235
+  prolif meta-reg: R2=21.8%, QM p=0.0355
+  full model R2: 11.1%
+
+=== CAF (k=31) ===
+  pooled HR=1.403 (1.233-1.598), I2=69.4%, tau2=0.0742
+  germ meta-reg: R2=3.8%, QM p=0.0765
+  prolif meta-reg: R2=39.3%, QM p=0.0017
+  full model R2: 36.9%
+
+=== TAN (k=31) ===
+  pooled HR=1.159 (1.036-1.296), I2=52.3%, tau2=0.0438
+  germ meta-reg: R2=45.0%, QM p=0.0024
+  prolif meta-reg: R2=8.5%, QM p=0.2376
+  full model R2: 76.9%
+
+=== cDC2 (k=31) ===
+  pooled HR=0.863 (0.785-0.949), I2=61.7%, tau2=0.0365
+  germ meta-reg: R2=0.0%, QM p=0.3986
+  prolif meta-reg: R2=0.0%, QM p=0.4925
+  full model R2: 0.0%
+
+=== IFNg_path (k=31) ===
+  pooled HR=1.053 (0.918-1.208), I2=80.3%, tau2=0.0995
+  germ meta-reg: R2=7.6%, QM p=0.2066
+  prolif meta-reg: R2=46.2%, QM p=0.0006
+  full model R2: 57.6%
+
+=== Prolifer (k=31) ===
+  pooled HR=1.496 (1.192-1.877), I2=87.9%, tau2=0.3032
+  germ meta-reg: R2=10.0%, QM p=0.0697
+  prolif meta-reg: R2=78.4%, QM p=0.0000
+  full model R2: 80.1%
+
