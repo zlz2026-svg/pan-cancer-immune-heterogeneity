@@ -4,14 +4,14 @@ A pan-cancer random-effects meta-analysis with meta-regression attribution.
 
 ## Overview
 
-Immune microenvironment signatures (CD8 T cells, tertiary lymphoid structures, cancer-associated fibroblasts, tumour-associated neutrophils, type-2 conventional dendritic cells, IFN-γ pathway, and proliferation) show strikingly inconsistent prognostic effects across cancer types. Using TCGA PanCancer expression and survival data from 31 cancer types (8,924 primary tumours), we quantified this heterogeneity and attributed it with univariate meta-regression.
+Immune microenvironment signatures (CD8 T cells, tertiary lymphoid structures, cancer-associated fibroblasts, tumor-associated neutrophils, type-2 conventional dendritic cells, IFN-γ pathway, and proliferation) show strikingly inconsistent prognostic effects across cancer types. Using TCGA PanCancer expression and survival data from 31 cancer types (8,924 primary tumors), we quantified this heterogeneity and attributed it with univariate meta-regression.
 
 **Key findings**
 
 - Between-cancer heterogeneity was marked (I² = 51–86%), including direction reversals (the CD8 T-cell signature is a risk factor in glioblastoma but protective in ovarian cancer).
 - Proliferation was the dominant moderator, explaining 27.6–37.5% of the between-cancer variance for CD8, CAF and IFN-γ signatures (permutation p < 0.05), consistent with stoichiometric dilution of immune signal by proliferating malignant cells.
-- The tumour-associated neutrophil signature was driven by non-tumoral (stromal/immune) content rather than germ-layer origin.
-- Tumour purity and tumour mutational burden contributed little, and the cDC2 signature had no significant moderator.
+- The tumor-associated neutrophil signature was driven by non-tumoral (stromal/immune) content rather than germ-layer origin.
+- Tumour purity and tumor mutational burden contributed little, and the cDC2 signature had no significant moderator.
 
 ## Repository contents
 
@@ -20,7 +20,7 @@ Immune microenvironment signatures (CD8 T cells, tertiary lymphoid structures, c
 
 ## Data availability
 
-Expression data (Toil-reprocessed TCGA PanCancer; Vivian et al. 2017, *Nat Biotechnol*) and survival data (Liu et al. 2018, *Cell*) are controlled-access and are **not** included in this repository. Request access via the NCI Genomic Data Commons (GDC) / dbGaP.
+Expression data (Toil-reprocessed TCGA PanCancer; Vivian et al. 2017, *Nat Biotechnol*) and survival data (Liu et al. 2018, *Cell*) are not redistributed in this repository; they are publicly available from the UCSC Xena Toil hub (https://xenabrowser.net/).
 
 ## Reproducing the analysis
 
@@ -34,4 +34,4 @@ This study was preregistered on the Open Science Framework: https://osf.io/39htc
 
 ## Status
 
-Submitted to *npj Precision Oncology*.
+In preparation; target journal: *npj Precision Oncology*.

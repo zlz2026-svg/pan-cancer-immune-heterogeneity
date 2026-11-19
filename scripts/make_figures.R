@@ -50,10 +50,21 @@ mod_map <- c("prolif_abs" = "Proliferation", "estimate_abs" = "Stromal/immune",
 attr <- meta[meta$moderator %in% names(mod_map), c("signature","moderator","R2","p")]
 attr$mod <- factor(mod_map[attr$moderator], levels = c("Germ layer","Proliferation","Stromal/immune","TMB"))
 attr$sig <- factor(attr$signature, levels = rev(sigs), labels = rev(labs))
-# 星号用 permutation p < 0.05（与正文/Table 2 一致），手动指定显著格
-star_pairs <- c("CD8_cyto|prolif_abs", "CAF|prolif_abs", "IFNg_path|prolif_abs",
-                "TAN|estimate_abs", "Prolifer|prolif_abs")
-attr$star <- ifelse(paste(attr$signature, attr$moderator, sep = "|") %in% star_pairs, "*", "")
+# 星号从 permutest.txt 自动读取 slope 置换 p（避免硬编码失配）
+perm_lines <- readLines("results/specB/permutest.txt")
+perm_slope <- list()
+for (ln in perm_lines) {
+  sig <- sub(" ~ .*", "", ln)
+  mod <- sub("^.* ~ ", "", ln); mod <- sub(": perm_p.*", "", mod)
+  p <- as.numeric(sub(".*perm_p=", "", sub(" \\(REML.*", "", ln)))
+  key <- paste(sig, mod, sep = "|")
+  if (is.null(perm_slope[[key]])) perm_slope[[key]] <- list(count = 0, slope_min = Inf)
+  perm_slope[[key]]$count <- perm_slope[[key]]$count + 1
+  if (perm_slope[[key]]$count >= 2) perm_slope[[key]]$slope_min <- min(perm_slope[[key]]$slope_min, p)
+}
+attr$star <- sapply(paste(attr$signature, attr$moderator, sep = "|"), function(k) {
+  if (is.null(perm_slope[[k]]) || perm_slope[[k]]$slope_min >= 0.05) "" else "*"
+})
 
 p3 <- ggplot(attr, aes(x = mod, y = sig, fill = R2)) +
   geom_tile(color = "white") +
