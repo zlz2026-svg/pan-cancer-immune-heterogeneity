@@ -34,4 +34,4 @@ This study was preregistered on the Open Science Framework: https://osf.io/39htc
 
 ## Status
 
-In preparation; target journal: *npj Precision Oncology*.
+In preparation.
