@@ -20,7 +20,8 @@ steps <- c(
   "scripts/figs/fig3.R",      # attribution heatmap + 4 meta-regression panels
   "scripts/figs/fig4.R",      # direction reversals + GLASS validation
   "scripts/figs/figS2.R",     # robustness: alternative metric, stage, leave-one-out
-  "scripts/figs/figS1.R"      # supplementary: dilution schematic
+  "scripts/figs/figS1.R",     # supplementary: dilution schematic
+  "scripts/figs/figGA.R"      # graphical abstract: three-column narrative
 )
 
 run <- function(cmd, args, label) {

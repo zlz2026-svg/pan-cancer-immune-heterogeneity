@@ -19,7 +19,7 @@ STAGES <- list(
   list(name = "Cohort assembly",
        lines = c("33 cancer types",
                  "\u2212 LAML, \u2212 TGCT",
-                 "31 cohorts, 8,924 tumours")),
+                 "31 cohorts, 8,924 tumors")),
   list(name = "Estimation",
        lines = c("7 signatures, z-scored",
                  "per-cancer Cox, 217 models",
@@ -99,7 +99,7 @@ pB <- ggplot(mb) +
   scale_x_log10(breaks = c(30, 100, 300, 1000), expand = c(0, 0)) +
   coord_cartesian(xlim = c(30, 2100), clip = "off") +
   scale_y_continuous(breaks = mb$y, labels = mb$rowlab, expand = c(0.015, 0.015)) +
-  labs(x = "Tumours (log scale)", y = NULL) +
+  labs(x = "Tumors (log scale)", y = NULL) +
   theme_npj() +
   theme(axis.line.y = element_blank(), axis.ticks.y = element_blank(),
         axis.text.y = element_text(size = FS$cell, colour = PAL$ink, hjust = 1),
@@ -186,7 +186,7 @@ p_leg <- mm_canvas(W, H_LEG) +
   annotate("text", x = 113.0, y = 6.2, hjust = 0, size = fsp(FS$legend),
            colour = PAL$ink, label = "eligible, matched expression and survival") +
   annotate("text", x = 113.0, y = 2.4, hjust = 0, size = fsp(FS$legend),
-           colour = PAL$ink, label = "modelled, entered the Cox models") +
+           colour = PAL$ink, label = "modeled, entered the Cox models") +
   geom_polygon(data = leg_cells, aes(x = x, y = y, group = group, fill = part),
                colour = NA) +
   scale_fill_manual(values = CELL_FILL, guide = "none") +

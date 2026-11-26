@@ -74,7 +74,7 @@ PANELS <- list(
   list(tag = "c", sig = "IFNg_path", mod = "prolif_abs",
        xlab = "", ylab = ""),
   list(tag = "d", sig = "CAF", mod = "prolif_abs",
-       xlab = "Tumour proliferation score", ylab = "Hazard ratio (log scale)"),
+       xlab = "Tumor proliferation score", ylab = "Hazard ratio (log scale)"),
   list(tag = "e", sig = "TAN", mod = "estimate_abs",
        xlab = "Stromal\u2013immune content score", ylab = "")
 )

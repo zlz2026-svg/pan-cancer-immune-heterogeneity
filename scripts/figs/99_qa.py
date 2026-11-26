@@ -35,6 +35,7 @@ REGISTRY = {
     "Fig4_reversal_validation": (183, 100, "main", False),
     "FigS2_robustness": (183, 110, "supplementary", False),
     "Supplementary_Figure_S1": (183, 95, "supplementary", False),
+    "Fig_GA": (183, 120, "main", True),
 }
 
 # locked palette (mirrors scripts/figs/00_tokens.R)

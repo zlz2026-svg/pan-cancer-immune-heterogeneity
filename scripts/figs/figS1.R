@@ -47,7 +47,7 @@ bars <- data.frame(x0 = c(XL[1] + (FIELD_W - BAR_W) / 2, XR[1] + (FIELD_W - BAR_
 bars$x1 <- bars$x0 + BAR_W
 
 labs <- data.frame(x = c(mean(XL), mean(XR)),
-                   title = c("Low-proliferation tumour", "High-proliferation tumour"),
+                   title = c("Low-proliferation tumor", "High-proliferation tumor"),
                    note  = c("Immune signal intact; HR far from 1",
                              "Immune signal diluted; HR closer to 1"),
                    stringsAsFactors = FALSE)

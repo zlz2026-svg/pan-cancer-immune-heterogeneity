@@ -47,6 +47,7 @@ REGISTRY = {
     "Fig4_reversal_validation": (183, 100),
     "FigS2_robustness": (183, 110),
     "Supplementary_Figure_S1": (183, 95),
+    "Fig_GA": (183, 120),
 }
 
 SIZE_FLOOR_PT = 4.99      # journal floor is 5 pt; leave a hair for float rounding
