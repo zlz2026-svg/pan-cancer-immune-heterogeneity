@@ -1,5 +1,6 @@
 # 置换检验补充（对核心显著模型）
 library(metafor)
+set.seed(20261128)  # D3 修复：固定随机种子，置换 p 唯一可复现
 res <- read.csv("results/specB/per_cancer_three.csv")
 mods <- read.csv("results/specB/moderators_abs.csv")
 endoderm <- c("LIHC","COAD","READ","STAD","ESCA","PAAD","CHOL","LUAD","LUSC","THCA","CESC","BLCA","PRAD","THYM")
@@ -21,7 +22,7 @@ for (t in targets) {
   fit <- rma(yi = beta, sei = se, mods = as.formula(paste("~", mn)), data = d, method = "REML")
   pt <- tryCatch(permutest(fit, iter = 2000, exact = FALSE), error = function(e) NULL)
   if (is.null(pt)) { out <- c(out, sprintf("%s ~ %s: permutest FAILED", nm, mn)); next }
-  out <- c(out, sprintf("%s ~ %s: perm_p=%.4f (REML p=%.4f)", nm, mn, pt$pval, fit$pval))
+  out <- c(out, sprintf("%s ~ %s: perm_p=%.4f (REML p=%.4f)", nm, mn, tail(pt$pval, 1), tail(fit$pval, 1)))
 }
 writeLines(out, "results/specB/permutest.txt")
 cat(out, sep = "\n")

@@ -1,0 +1,10 @@
+=== OV-AU external validation (per-signature univariable Cox) ===
+CAF        n= 65 events=54  HR=1.53 (1.10-2.13) p=0.011 | TCGA-OV HR=0.97 | agree=FALSE
+CD8_cyto   n= 65 events=54  HR=0.89 (0.64-1.24) p=0.497 | TCGA-OV HR=0.88 | agree=TRUE
+IFNg_path  n= 65 events=54  HR=0.68 (0.48-0.98) p=0.039 | TCGA-OV HR=0.87 | agree=TRUE
+Prolifer   n= 65 events=54  HR=0.83 (0.58-1.18) p=0.299 | TCGA-OV HR=0.91 | agree=TRUE
+TAN        n= 65 events=54  HR=1.15 (0.78-1.69) p=0.476 | TCGA-OV HR=1.05 | agree=TRUE
+TLS        n= 65 events=54  HR=0.98 (0.71-1.36) p=0.914 | TCGA-OV HR=0.81 | agree=TRUE
+cDC2       n= 65 events=54  HR=1.12 (0.81-1.57) p=0.491 | TCGA-OV HR=0.99 | agree=FALSE
+
+Direction agreement with TCGA OV: 5/7

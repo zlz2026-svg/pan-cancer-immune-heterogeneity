@@ -4,6 +4,10 @@ library(survival)
 
 d <- read.csv("results/glass_expr_clin.csv", check.names = FALSE, stringsAsFactors = FALSE)
 
+# D1 修复（2026-11-28）：GLASS 是纵向队列，79 行含同一患者的基线(-TP)与复发(-R*)样本。
+# 只保留 -TP 基线样本，消除伪重复（43 患者 / 36 死亡，事件率 83.7%）。
+d <- d[grepl("-TP$", d$sample), ]
+
 signatures <- list(
   CD8_cyto  = c("CD8A","CD8B","CD3D","CD3E","GZMA","GZMB","PRF1","IFNG","PDCD1","CTLA4","LAG3","HAVCR2","TIGIT","TOX"),
   TLS       = c("CXCL13","CCL19","CCL21","CD79A","MS4A1","LTB","TNFRSF17"),

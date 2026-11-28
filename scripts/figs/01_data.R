@@ -102,7 +102,7 @@ mr$mod_lab <- unname(mod_lab[mr$moderator])
 if (nrow(mr) != 28) stop_here("expected 28 meta-regression rows")
 if (max(mr$R2) < 73.6 || max(mr$R2) > 73.8) stop_here("max R2 should be 73.7 (Prolifer, self-referential)")
 
-# permutation p from permutest.txt: two rows per signature-moderator pair, take the smaller
+# permutation p from permutest.txt (single run, fixed seed; one row per pair)
 perm_lines <- readLines("results/specB/permutest.txt", warn = FALSE)
 perm <- do.call(rbind, lapply(perm_lines, function(ln) {
   if (!grepl("perm_p=", ln)) return(NULL)
@@ -112,7 +112,6 @@ perm <- do.call(rbind, lapply(perm_lines, function(ln) {
   data.frame(signature = unname(SIG_MAP[sig]), moderator = mod, perm_p = p,
              stringsAsFactors = FALSE)
 }))
-perm <- aggregate(perm_p ~ signature + moderator, data = perm, FUN = min)
 mr <- merge(mr, perm, by = c("signature", "moderator"), all.x = TRUE)
 mr$star_perm <- ifelse(!is.na(mr$perm_p) & mr$perm_p < 0.05, "*", "")
 mr$star <- mr$star_perm
@@ -120,8 +119,8 @@ mr$star <- ifelse(mr$signature == "Prolifer" & mr$moderator == "prolif_abs", "\u
 mr$star <- ifelse(mr$signature == "TAN" & mr$moderator == "germ" & mr$p < 0.05, "\u2020", mr$star)
 star_tab <- mr[mr$star_perm == "*", c("signature", "moderator")]
 expected_star <- data.frame(
-  signature = c("CD8_Tcell", "CAF", "IFNg_path", "TAN", "Prolifer"),
-  moderator = c("prolif_abs", "prolif_abs", "prolif_abs", "estimate_abs", "prolif_abs"),
+  signature = c("CD8_Tcell", "TLS", "CAF", "IFNg_path", "TAN", "Prolifer"),
+  moderator = c("prolif_abs", "prolif_abs", "prolif_abs", "prolif_abs", "estimate_abs", "prolif_abs"),
   stringsAsFactors = FALSE
 )
 if (!setequal(paste0(star_tab$signature, star_tab$moderator),
@@ -146,7 +145,7 @@ glass <- read.csv("results/glass_validation_cox.csv", stringsAsFactors = FALSE)
 glass$signature <- unname(SIG_MAP[glass$signature])
 glass$sig <- glass$p < 0.05
 if (nrow(glass) != 7) stop_here("GLASS should have 7 signatures")
-if (sum(glass$sig) != 6) stop_here("GLASS should have 6/7 significant")
+if (sum(glass$sig) != 5) stop_here("GLASS should have 5/7 significant")
 
 # ---- 11. glioma-pooled estimates (cache once, never recompute at plot time)
 dir.create("results/fig_inputs", showWarnings = FALSE)

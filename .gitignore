@@ -31,3 +31,12 @@ results/meta_regression_v4.txt
 results/geo_validation_summary.txt
 results/glass_expr_clin.csv
 results/specB/B2_attribution_preview.txt
+
+# 投稿材料包（投稿接收前不公开，2026-11-28 从 02-最终交付 提升到根目录）
+投稿材料包/
+
+# 旧版脚本归档（git 历史已存，不重复追踪）
+scripts/历史版本/
+
+# 内部进度卡（含作者/基金号等内部信息）
+_进度.md
